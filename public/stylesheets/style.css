@@ -1,8 +1,152 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url(https://images.pexels.com/photos/8885140/pexels-photo-8885140.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 14rem;
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-left: 2rem; 
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+.nav {
+  background-color: black;
+
+
+  ul {
+    display: flex;
+    margin-top: 0;
+    padding-left: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 3.5rem;
+    list-style-type: none; 
+    padding: 0; 
+    gap: 1rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 1rem;
+      margin-right: 1rem; 
+      justify-content: center;
+      padding: 0rem 2rem;
+      transition: 0.4s all;
+  }
+
+  li:hover {
+    background-color: wheat;
+    a{
+      color: black;
+    }
+}
+
+  a {
+    text-decoration: none;
+    color: white;
+}
+}
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mainContent {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1200px;
+
+
+  figure{
+    position: relative;
+    margin-bottom: 1rem;
+
+    img{
+      height: 200px;
+      width: 300px;
+      object-fit: cover;
+    }
+
+    figcaption{
+      position: absolute;
+      top: 120px;
+      bottom: 0;
+      padding: 1rem 0rem 1rem 1rem;
+      background-color: rgba(0, 0, 0, 0.384);
+      color: white;
+      font-weight: bolder;
+      z-index: 1;
+      transition: 0.5s all;
+    }
+
+  }
+
+  figure:hover{
+
+    figcaption{
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.692);
+    }
+  }
+
+}
+.entradaThumbnail {
+  width: 300px;
+  height: 200px;
+  gap: 3rem;
+}
+
+.entradaContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  height: 3rem;
 }

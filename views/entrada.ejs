@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include("partials/head.ejs")%>
+  </head>
+  <body>
+    <div class="headerContainer">
+      <%- include("partials/header.ejs")%>
+    </div>
+    <main>
+    <img src="<%- item.image  %>" alt="<%- item.id %>">
+    <h2 class="entradaTitle"><%- item.title %></h2>
+    <h5><%- item.intro %></h5>
+
+    <a href="/"><%= item.category %></a>
+    <div class="entradaContent">
+    <%- item.content %>
+    </div>
+    </main>
+    <footer>
+        <%- include("partials/footer.ejs")%>
+    </footer>
+</body>
+</html>
